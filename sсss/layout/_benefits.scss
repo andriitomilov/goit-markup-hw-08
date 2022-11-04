@@ -16,6 +16,10 @@
   text-transform: uppercase;
 
   color: $color-secondary;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .benefits__text {
