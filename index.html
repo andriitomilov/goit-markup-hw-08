@@ -11,10 +11,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-        <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -25,12 +25,48 @@
                 <a href="./index.html" class="logo link header__logo">
                     Web<span class="logo--black">Studio</span>
                 </a>
+
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="./index.html" class="nav__link link nav__link--current">Студія</a></li>
+                    <li class="nav__item"><a href="./index.html" class="nav__link link nav__link--current">Студія</a>
+                    </li>
                     <li class="nav__item"><a href="./portfolio.html" class="nav__link link">Портфоліо</a></li>
                     <li class="nav__item"><a href="" class="nav__link link">Контакти</a></li>
                 </ul>
+
+                <button class=" menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                        <use class="" href="./images/icons.svg#menu-open" ></use>
+                    </svg>
+                </button>
+
+                <div class="menu js-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu" type="button">
+                        <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                            <use class="" href="./images/icons.svg#menu-close"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+                        <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+                    </ul>
+
+                    <ul class="menu-contacts">
+                        <li class="menu-contacts__item"><a href="tel:+380961111111" class="menu__tel">+38 096 111 11 11</a></li>
+                        <li class="menu-contacts__item"><a href="mailto:info@devstudio.com" class="menu__mail">info@devstudio.com</a></li>
+                    </ul>
+
+
+                    <ul class="menu-social">
+                        <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
+                        <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
+                        <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
+                        <li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
+                    </ul>
+                </div>
             </nav>
+
             <ul class="contacts">
                 <li class="contacts__item">
                     <a class="contacts__link link" href="mailto:info@devstudio.com" target="_blank">
@@ -52,7 +88,7 @@
 
     </header>
 
-    <main>
+    <!-- <main>
         <section class="hero ">
             <div class="hero__overlay">
                 <div class="container section section--large-padding">
@@ -68,7 +104,7 @@
         <section class="benefits section">
 
             <div class="container">
-                <!-- Потім приховаємо -->
+
                 <h2 class="visually-hidden">Переваги WebStudio</h2>
                 <ul class="grid">
                     <li class="grid__item">
@@ -522,9 +558,10 @@
             </div>
         </div>
 
-    </footer>
+    </footer> -->
 
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -4,9 +4,20 @@
 
 .header__container {
   display: flex;
+  align-items: center;
 }
 
 .header__logo {
-  padding: 24px 0 25px;
-  margin-right: 93px;
+  padding: 16px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0 25px;
+    margin-right: 93px;
+  }
+
 }
