@@ -94,11 +94,19 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section--large-padding {
-  padding: 200px 0;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .section--large-padding {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .section--no-padding-top {
@@ -273,7 +281,7 @@ body {
 }
 
 .btn {
-  padding: 10px 32px;
+  padding: 10px 24px;
   color: #ffffff;
   background-color: #2196f3;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -291,6 +299,12 @@ body {
 }
 .btn:hover {
   background-color: #188ce8;
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .menu-toggle {
@@ -387,6 +401,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -589,7 +605,7 @@ body {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
+  width: 90%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -605,6 +621,16 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__close {
@@ -640,8 +666,13 @@ body {
 .modal__title {
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__list {
@@ -751,7 +782,14 @@ body {
           align-items: center;
   gap: 8px;
   margin-bottom: 30px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link {
@@ -826,18 +864,24 @@ body {
 .hero__overlay {
   margin: 0 auto;
   max-width: 1600px;
-  height: 600px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
 }
 
 .hero__title {
-  width: 696px;
+  max-width: 360px;
   margin: 0 auto 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .benefits__decor {
