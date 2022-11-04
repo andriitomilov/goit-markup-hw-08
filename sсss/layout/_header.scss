@@ -1,0 +1,12 @@
+.header {
+  border-bottom: 1px solid $color-border-primary;
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__logo {
+  padding: 24px 0 25px;
+  margin-right: 93px;
+}

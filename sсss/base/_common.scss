@@ -1,0 +1,25 @@
+body {
+  color: $color-primary;
+  font-family: $font-family-brand;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+
+  color: $color-secondary;
+}

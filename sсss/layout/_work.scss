@@ -1,0 +1,20 @@
+.work{
+    text-align: center;
+}
+
+.work__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  padding: 27px 0;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $color-hero-primary;
+  background-color: $color-work-title;
+}
