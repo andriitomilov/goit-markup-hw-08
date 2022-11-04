@@ -1,5 +1,7 @@
 .address {
-  width: 230px;
+  @media screen and (min-width: 768px) {
+    width: 230px;
+  }
 }
 
 .address__link {
@@ -12,16 +14,19 @@
   transition: color $transition-function-time $transition-function-type;
 
   &:hover,
-  &:focus{
+  &:focus {
     color: $color-hero-primary;
   }
 }
 
-.address__link--white{
-    color: $color-hero-primary;
-  }
-
-.address__list .address__item + .address__item {
-  margin-top: 9px;
+.address__link--white {
+  color: $color-hero-primary;
 }
 
+.address__list .address__item:not(:last-child) {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
