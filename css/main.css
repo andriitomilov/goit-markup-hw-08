@@ -932,7 +932,13 @@ body {
 }
 
 .work {
-  text-align: center;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+    text-align: center;
+  }
 }
 
 .work__title {
