@@ -5,35 +5,40 @@
 }
 
 .grid__item {
-
-  @media screen and (min-width: 768px ) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 1200px ) {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 90px) / 4);
   }
-  
 }
 
 .grid__item--three-card {
-    flex-basis: calc((100% - 60px) / 3);
-  }
+  flex-basis: calc((100% - 60px) / 3);
+}
 
 .grid__item--six-card {
+  flex-basis: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 180px) / 6);
-  } 
+  }
+}
 
 .grid__item--relative {
-    position: relative;
-  } 
+  position: relative;
+}
 
 .grid__item--decorated {
-    background: #ffffff;
-    box-shadow: $box-shadow-grid-decorated;
-    border-radius: 0px 0px 4px 4px;
-  } 
-  
+  background: #ffffff;
+  box-shadow: $box-shadow-grid-decorated;
+  border-radius: 0px 0px 4px 4px;
+}
+
 .grid__item--product-decorated {
   border: 1px solid $color-border-secondary;
   transition: box-shadow $transition-function-time $transition-function-type;
