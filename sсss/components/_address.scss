@@ -1,5 +1,5 @@
 .address {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     width: 230px;
   }
 }
@@ -26,7 +26,7 @@
 .address__list .address__item:not(:last-child) {
   margin-bottom: 8px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-size) {
     margin-bottom: 9px;
   }
 }

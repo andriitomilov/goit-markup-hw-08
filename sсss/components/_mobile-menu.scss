@@ -9,7 +9,8 @@
   background-color: transparent;
 
   cursor: pointer;
-  @media screen and (min-width: 768px) {
+  
+  @media screen and (min-width: $tablet-size) {
     display: none;
   }
 }

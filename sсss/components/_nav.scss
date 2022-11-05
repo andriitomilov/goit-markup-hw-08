@@ -2,7 +2,7 @@
   display: flex;
  
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: calc($tablet-size - 1px)) {
      width: 100%;
   }
 }
@@ -11,7 +11,7 @@
 .contacts {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     display: flex;
   }
 }
@@ -46,7 +46,7 @@
 .contacts {
   margin-left: auto;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet-size) and (max-width: calc($desktop-size - 1px)) {
     flex-direction: column;
     gap: 10px;
   }
@@ -54,7 +54,7 @@
 
 .contacts__item {
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-size) {
     .contacts &:not(:last-child) {
       margin-right: 50px;
     }
@@ -70,11 +70,11 @@
   color: $color-primary;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     gap: 8px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-size) {
     padding: 32px 0;
     gap: 10px;
 

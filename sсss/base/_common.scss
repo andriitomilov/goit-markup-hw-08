@@ -8,15 +8,15 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: $mobile-size) {
+    width: $mobile-size;
   }
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet-size) {
+    width: $tablet-size;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: $desktop-size) {
+    width: $desktop-size;
   }
 }
 .img {

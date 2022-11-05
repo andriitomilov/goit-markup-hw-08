@@ -19,11 +19,11 @@
   transition: transform $transition-function-time $transition-function-type,
     opacity $transition-function-time $transition-function-type;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile-size) {
     width: 450px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-size) {
     width: 528px;
   }
 }
@@ -63,7 +63,7 @@
 
   color: $color-secondary;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop-size) {
     line-height: 1.15;
   }
 }
