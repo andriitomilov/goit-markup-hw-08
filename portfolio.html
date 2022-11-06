@@ -11,26 +11,35 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    
+
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-        <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container header__container">
-    
+
             <nav class="nav">
                 <a href="./index.html" class="logo link header__logo">
                     Web<span class="logo--black">Studio</span>
                 </a>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="./index.html" class="nav__link link ">Студія</a></li>
-                    <li class="nav__item"><a href="./portfolio.html" class="nav__link link nav__link--current">Портфоліо</a></li>
+                    <li class="nav__item"><a href="./portfolio.html"
+                            class="nav__link link nav__link--current">Портфоліо</a></li>
                     <li class="nav__item"><a href="" class="nav__link link">Контакти</a></li>
                 </ul>
+
+                <button class=" menu-toggle js-open-menu" type="button" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                        <use class="" href="./images/icons.svg#menu-open"></use>
+                    </svg>
+                </button>
             </nav>
+
             <ul class="contacts">
                 <li class="contacts__item">
                     <a class="contacts__link link" href="mailto:info@devstudio.com" target="_blank">
@@ -47,10 +56,11 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
-    
+
         </div>
-    
+
     </header>
+
     <main>
         <section class="galery section">
             <div class="container">
@@ -72,15 +82,42 @@
                             Маркетинг
                         </button></li>
                 </ul>
-                
+
                 <ul class="grid">
                     <li class=".grid__item grid__item--three-card grid__item--product-decorated">
 
                         <article class="product">
                             <div class="product__thumb">
-                                <img src="./images/galery-img-01.jpg" alt="ноутбук" class="product__img img" width="370">
+                                <picture>
+                                    <source srcset="./images/galery-img-01-450.webp 450w, 
+                                                    ./images/galery-img-01-450@2x.webp 900w,
+                                                    ./images/galery-img-01-450@3x.webp 1350w,
+                                                    ./images/galery-img-01-354.webp 354w, 
+                                                    ./images/galery-img-01-354@2x.webp 708w,
+                                                    ./images/galery-img-01-354@3x.webp 1062w,
+                                                    ./images/galery-img-01-370.webp 370w, 
+                                                    ./images/galery-img-01-370@2x.webp 740w,
+                                                    ./images/galery-img-01-370@3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                                        type="image/webp">
+
+                                    <source srcset="./images/galery-img-01-450.jpg 450w, 
+                                                    ./images/galery-img-01-450@2x.jpg 900w,
+                                                    ./images/galery-img-01-450@3x.jpg 1350w,
+                                                    ./images/galery-img-01-354.jpg 354w, 
+                                                    ./images/galery-img-01-354@2x.jpg 708w,
+                                                    ./images/galery-img-01-354@3x.jpg 1062w,
+                                                    ./images/galery-img-01-370.jpg 370w, 
+                                                    ./images/galery-img-01-370@2x.jpg 740w,
+                                                    ./images/galery-img-01-370@3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                                        type="image/jpeg">
+
+                                    <img src="./images/galery-img-01-450.jpg" alt="ноутбук" class="product__img img">
+                                </picture>
                                 <div class="product__overlay">
-                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним
+                                        рівнем функціоналу та сервісів.
                                         Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -94,15 +131,43 @@
                                 </p>
                             </div>
                         </article>
-                        
+
                     </li>
 
                     <li class=".grid__item grid__item--three-card grid__item--product-decorated">
                         <article class="product">
                             <div class="product__thumb">
-                                <img src="./images/galery-img-02.jpg" alt="постер баскетбольної гри" class="product__img img" width="370">
+                                <picture>
+                                    <source srcset="./images/galery-img-02-450.webp 450w, 
+                                                    ./images/galery-img-02-450@2x.webp 900w,
+                                                    ./images/galery-img-02-450@3x.webp 1350w,
+                                                    ./images/galery-img-02-354.webp 354w, 
+                                                    ./images/galery-img-02-354@2x.webp 708w,
+                                                    ./images/galery-img-02-354@3x.webp 1062w,
+                                                    ./images/galery-img-02-370.webp 370w, 
+                                                    ./images/galery-img-02-370@2x.webp 740w,
+                                                    ./images/galery-img-02-370@3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                                        type="image/webp">
+
+                                    <source srcset="./images/galery-img-02-450.jpg 450w, 
+                                                    ./images/galery-img-02-450@2x.jpg 900w,
+                                                    ./images/galery-img-02-450@3x.jpg 1350w,
+                                                    ./images/galery-img-02-354.jpg 354w, 
+                                                    ./images/galery-img-02-354@2x.jpg 708w,
+                                                    ./images/galery-img-02-354@3x.jpg 1062w,
+                                                    ./images/galery-img-02-370.jpg 370w, 
+                                                    ./images/galery-img-02-370@2x.jpg 740w,
+                                                    ./images/galery-img-02-370@3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                                        type="image/jpeg">
+
+                                    <img src="./images/galery-img-02-450.jpg" alt="баскетболісти"
+                                        class="product__img img">
+                                </picture>
                                 <div class="product__overlay">
-                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним
+                                        рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -117,15 +182,45 @@
                                 </p>
                             </div>
                         </article>
-                        
+
                     </li>
 
                     <li class=".grid__item grid__item--three-card grid__item--product-decorated">
                         <article class="product">
                             <div class="product__thumb">
-                                <img src="./images/galery-img-03.jpg" alt="логотип ресторана" class="product__img img" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/galery-img-03-450.webp 450w, 
+                                                ./images/galery-img-03-450@2x.webp 900w,
+                                                ./images/galery-img-03-450@3x.webp 1350w,
+                                                ./images/galery-img-03-354.webp 354w, 
+                                                ./images/galery-img-03-354@2x.webp 708w,
+                                                ./images/galery-img-03-354@3x.webp 1062w,
+                                                ./images/galery-img-03-370.webp 370w, 
+                                                ./images/galery-img-03-370@2x.webp 740w,
+                                                ./images/galery-img-03-370@3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                                        type="image/webp">
+
+                                    <source
+                                        srcset="./images/galery-img-03-450.jpg 450w, 
+                                                ./images/galery-img-03-450@2x.jpg 900w,
+                                                ./images/galery-img-03-450@3x.jpg 1350w,
+                                                ./images/galery-img-03-354.jpg 354w, 
+                                                ./images/galery-img-03-354@2x.jpg 708w,
+                                                ./images/galery-img-03-354@3x.jpg 1062w,
+                                                ./images/galery-img-03-370.jpg 370w, 
+                                                ./images/galery-img-03-370@2x.jpg 740w,
+                                                ./images/galery-img-03-370@3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                                        type="image/jpeg">
+
+                                    <img src="./images/galery-img-03-450.jpg" alt="логотип ресторана"
+                                        class="product__img img">
+                                </picture>
                                 <div class="product__overlay">
-                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним
+                                        рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -140,15 +235,41 @@
                                 </p>
                             </div>
                         </article>
-                        
+
                     </li>
 
                     <li class=".grid__item grid__item--three-card grid__item--product-decorated">
                         <article class="product">
                             <div class="product__thumb">
-                                <img src="./images/galery-img-04.jpg" alt="навушники" class="product__img img" width="370">
+                                <picture>
+                                    <source srcset="./images/galery-img-04-450.webp 450w, 
+                                                    ./images/galery-img-04-450@2x.webp 900w,
+                                                    ./images/galery-img-04-450@3x.webp 1350w,
+                                                    ./images/galery-img-04-354.webp 354w, 
+                                                    ./images/galery-img-04-354@2x.webp 708w,
+                                                    ./images/galery-img-04-354@3x.webp 1062w,
+                                                    ./images/galery-img-04-370.webp 370w, 
+                                                    ./images/galery-img-04-370@2x.webp 740w,
+                                                    ./images/galery-img-04-370@3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/webp">
+                                
+                                    <source srcset="./images/galery-img-04-450.jpg 450w, 
+                                                    ./images/galery-img-04-450@2x.jpg 900w,
+                                                    ./images/galery-img-04-450@3x.jpg 1350w,
+                                                    ./images/galery-img-04-354.jpg 354w, 
+                                                    ./images/galery-img-04-354@2x.jpg 708w,
+                                                    ./images/galery-img-04-354@3x.jpg 1062w,
+                                                    ./images/galery-img-04-370.jpg 370w, 
+                                                    ./images/galery-img-04-370@2x.jpg 740w,
+                                                    ./images/galery-img-04-370@3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/jpeg">
+                                
+                                    <img src="./images/galery-img-04-450.jpg" alt="навушники" class="product__img img">
+                                </picture>
+                               
                                 <div class="product__overlay">
-                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним
+                                        рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -163,16 +284,41 @@
                                 </p>
                             </div>
                         </article>
-                        
+
                     </li>
 
                     <li class=".grid__item grid__item--three-card grid__item--product-decorated">
                         <article class="product">
                             <div class="product__thumb">
-                                <img src="./images/galery-img-05.jpg" alt="дві коробки" class="product__img img" width="370">
-                            
+                                <picture>
+                                    <source srcset="./images/galery-img-05-450.webp 450w, 
+                                                    ./images/galery-img-05-450@2x.webp 900w,
+                                                    ./images/galery-img-05-450@3x.webp 1350w,
+                                                    ./images/galery-img-05-354.webp 354w, 
+                                                    ./images/galery-img-05-354@2x.webp 708w,
+                                                    ./images/galery-img-05-354@3x.webp 1062w,
+                                                    ./images/galery-img-05-370.webp 370w, 
+                                                    ./images/galery-img-05-370@2x.webp 740w,
+                                                    ./images/galery-img-05-370@3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/webp">
+                                
+                                    <source srcset="./images/galery-img-05-450.jpg 450w, 
+                                                    ./images/galery-img-05-450@2x.jpg 900w,
+                                                    ./images/galery-img-05-450@3x.jpg 1350w,
+                                                    ./images/galery-img-05-354.jpg 354w, 
+                                                    ./images/galery-img-05-354@2x.jpg 708w,
+                                                    ./images/galery-img-05-354@3x.jpg 1062w,
+                                                    ./images/galery-img-05-370.jpg 370w, 
+                                                    ./images/galery-img-05-370@2x.jpg 740w,
+                                                    ./images/galery-img-05-370@3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/jpeg">
+                                
+                                    <img src="./images/galery-img-05-450.jpg" alt="дві коробки" class="product__img img">
+                                </picture>
+
                                 <div class="product__overlay">
-                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним
+                                        рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -187,16 +333,41 @@
                                 </p>
                             </div>
                         </article>
-                        
+
                     </li>
 
                     <li class=".grid__item grid__item--three-card grid__item--product-decorated">
                         <article class="product">
                             <div class="product__thumb">
-                                <img src="./images/galery-img-06.jpg" alt="ноутбук" class="product__img img" width="370">
-                            
+                                <picture>
+                                    <source srcset="./images/galery-img-06-450.webp 450w, 
+                                                    ./images/galery-img-06-450@2x.webp 900w,
+                                                    ./images/galery-img-06-450@3x.webp 1350w,
+                                                    ./images/galery-img-06-354.webp 354w, 
+                                                    ./images/galery-img-06-354@2x.webp 708w,
+                                                    ./images/galery-img-06-354@3x.webp 1062w,
+                                                    ./images/galery-img-06-370.webp 370w, 
+                                                    ./images/galery-img-06-370@2x.webp 740w,
+                                                    ./images/galery-img-06-370@3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/webp">
+                                
+                                    <source srcset="./images/galery-img-06-450.jpg 450w, 
+                                                    ./images/galery-img-06-450@2x.jpg 900w,
+                                                    ./images/galery-img-06-450@3x.jpg 1350w,
+                                                    ./images/galery-img-06-354.jpg 354w, 
+                                                    ./images/galery-img-06-354@2x.jpg 708w,
+                                                    ./images/galery-img-06-354@3x.jpg 1062w,
+                                                    ./images/galery-img-06-370.jpg 370w, 
+                                                    ./images/galery-img-06-370@2x.jpg 740w,
+                                                    ./images/galery-img-06-370@3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/jpeg">
+                                
+                                    <img src="./images/galery-img-06-450.jpg" alt="ноутбук" class="product__img img">
+                                </picture>
+
                                 <div class="product__overlay">
-                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним
+                                        рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -211,16 +382,41 @@
                                 </p>
                             </div>
                         </article>
-                        
+
                     </li>
 
                     <li class=".grid__item grid__item--three-card grid__item--product-decorated">
                         <article class="product">
                             <div class="product__thumb">
-                                <img src="./images/galery-img-07.jpg" alt="газета" class="product__img img" width="370">
-                            
+                                <picture>
+                                    <source srcset="./images/galery-img-07-450.webp 450w, 
+                                                    ./images/galery-img-07-450@2x.webp 900w,
+                                                    ./images/galery-img-07-450@3x.webp 1350w,
+                                                    ./images/galery-img-07-354.webp 354w, 
+                                                    ./images/galery-img-07-354@2x.webp 708w,
+                                                    ./images/galery-img-07-354@3x.webp 1062w,
+                                                    ./images/galery-img-07-370.webp 370w, 
+                                                    ./images/galery-img-07-370@2x.webp 740w,
+                                                    ./images/galery-img-07-370@3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/webp">
+                                
+                                    <source srcset="./images/galery-img-07-450.jpg 450w, 
+                                                    ./images/galery-img-07-450@2x.jpg 900w,
+                                                    ./images/galery-img-07-450@3x.jpg 1350w,
+                                                    ./images/galery-img-07-354.jpg 354w, 
+                                                    ./images/galery-img-07-354@2x.jpg 708w,
+                                                    ./images/galery-img-07-354@3x.jpg 1062w,
+                                                    ./images/galery-img-07-370.jpg 370w, 
+                                                    ./images/galery-img-07-370@2x.jpg 740w,
+                                                    ./images/galery-img-07-370@3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/jpeg">
+                                
+                                    <img src="./images/galery-img-07-450.jpg" alt="газета" class="product__img img">
+                                </picture>
+
                                 <div class="product__overlay">
-                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним
+                                        рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -235,16 +431,41 @@
                                 </p>
                             </div>
                         </article>
-                        
+
                     </li>
 
                     <li class=".grid__item grid__item--three-card grid__item--product-decorated">
                         <article class="product">
                             <div class="product__thumb">
-                                <img src="./images/galery-img-08.jpg" alt="логотип компанії" class="product__img img" width="370">
-                            
+                                <picture>
+                                    <source srcset="./images/galery-img-08-450.webp 450w, 
+                                                    ./images/galery-img-08-450@2x.webp 900w,
+                                                    ./images/galery-img-08-450@3x.webp 1350w,
+                                                    ./images/galery-img-08-354.webp 354w, 
+                                                    ./images/galery-img-08-354@2x.webp 708w,
+                                                    ./images/galery-img-08-354@3x.webp 1062w,
+                                                    ./images/galery-img-08-370.webp 370w, 
+                                                    ./images/galery-img-08-370@2x.webp 740w,
+                                                    ./images/galery-img-08-370@3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/webp">
+                                
+                                    <source srcset="./images/galery-img-08-450.jpg 450w, 
+                                                    ./images/galery-img-08-450@2x.jpg 900w,
+                                                    ./images/galery-img-08-450@3x.jpg 1350w,
+                                                    ./images/galery-img-08-354.jpg 354w, 
+                                                    ./images/galery-img-08-354@2x.jpg 708w,
+                                                    ./images/galery-img-08-354@3x.jpg 1062w,
+                                                    ./images/galery-img-08-370.jpg 370w, 
+                                                    ./images/galery-img-08-370@2x.jpg 740w,
+                                                    ./images/galery-img-08-370@3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/jpeg">
+                                
+                                    <img src="./images/galery-img-08-450.jpg" alt="логотип компанії" class="product__img img">
+                                </picture>
+
                                 <div class="product__overlay">
-                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним
+                                        рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
@@ -259,21 +480,48 @@
                                 </p>
                             </div>
                         </article>
-                        
+
                     </li>
 
                     <li class=".grid__item grid__item--three-card grid__item--product-decorated">
                         <article class="product">
                             <div class="product__thumb">
-                                <img src="./images/galery-img-09.jpg" alt="ноутбук" class="product__img img" width="370">
-                            
+                                <picture>
+                                    <source srcset="./images/galery-img-09-450.webp 450w, 
+                                                    ./images/galery-img-09-450@2x.webp 900w,
+                                                    ./images/galery-img-09-450@3x.webp 1350w,
+                                                    ./images/galery-img-09-354.webp 354w, 
+                                                    ./images/galery-img-09-354@2x.webp 708w,
+                                                    ./images/galery-img-09-354@3x.webp 1062w,
+                                                    ./images/galery-img-09-370.webp 370w, 
+                                                    ./images/galery-img-09-370@2x.webp 740w,
+                                                    ./images/galery-img-09-370@3x.webp 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/webp">
+                                
+                                    <source srcset="./images/galery-img-09-450.jpg 450w, 
+                                                    ./images/galery-img-09-450@2x.jpg 900w,
+                                                    ./images/galery-img-09-450@3x.jpg 1350w,
+                                                    ./images/galery-img-09-354.jpg 354w, 
+                                                    ./images/galery-img-09-354@2x.jpg 708w,
+                                                    ./images/galery-img-09-354@3x.jpg 1062w,
+                                                    ./images/galery-img-09-370.jpg 370w, 
+                                                    ./images/galery-img-09-370@2x.jpg 740w,
+                                                    ./images/galery-img-09-370@3x.jpg 1110w"
+                                        sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px" type="image/jpeg">
+                                
+                                    <img src="./images/galery-img-09-450.jpg" alt="логотип компанії" class="product__img img">
+                                </picture>
+
+
                                 <div class="product__overlay">
-                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним
+                                        рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
+
                             <div class="product__content">
                                 <h3 class="product__title" lang="en">
                                     Growing Business
@@ -283,7 +531,7 @@
                                 </p>
                             </div>
                         </article>
-                        
+
                     </li>
                 </ul>
             </div>
@@ -314,7 +562,7 @@
                     </ul>
                 </address>
             </div>
-    
+
             <div class="footer__box">
                 <h2 class="footer__title">приєднуйтесь</h2>
                 <ul class="social">
@@ -347,31 +595,65 @@
                         </a>
                     </li>
                 </ul>
-    
+
             </div>
-    
+
             <div class="footer__box">
                 <h2 class="footer__title">Підпишіться на розсилку</h2>
-    
+
                 <form method="post" class="footer__form">
                     <input class="footer__input" type="email" name="user-email" placeholder="E-mail">
-    
-    
+
+
                     <button class="btn footer__btn" type="submit">
                         Підписатися
-    
+
                         <svg class="footer__icon" width="24px" height="24px">
                             <use href="./images/icons.svg#send"></use>
                         </svg>
                     </button>
                 </form>
-    
-    
+
+
             </div>
         </div>
-    
+
     </footer>
 
+    <div class="menu js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu" type="button">
+            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                <use class="" href="./images/icons.svg#menu-close"></use>
+            </svg>
+        </button>
+
+        <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+            <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+        </ul>
+
+        <div class="menu__wrap">
+            <ul class="menu-contacts">
+                <li class="menu-contacts__item"><a href="tel:+380961111111" class="menu__tel">+38 096 111 11 11</a></li>
+                <li class="menu-contacts__item"><a href="mailto:info@devstudio.com"
+                        class="menu__mail">info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="menu-social">
+                <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
+                <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
+                <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
+                <li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 

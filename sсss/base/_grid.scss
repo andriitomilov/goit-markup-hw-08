@@ -15,7 +15,15 @@
 }
 
 .grid__item--three-card {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: 100%;
+
+  @media screen and (min-width: $tablet-size){
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: $desktop-size){
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  
 }
 
 .grid__item--six-card {
