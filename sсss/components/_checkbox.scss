@@ -18,6 +18,11 @@
 
 .checkbox__link {
   color: $color-accent;
+  text-decoration: underline;
+
+  @media screen and (min-width: $desktop-size){
+    text-decoration: none;
+  }
 }
 
 .checkbox__decor {

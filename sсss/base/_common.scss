@@ -26,10 +26,17 @@ body {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-size: 36px;
+  font-size: 33px;
   line-height: 1.17;
 
   color: $color-secondary;
+
+  @media screen and (min-width: $desktop-size){
+    margin-bottom: 50px;
+
+    font-size: 36px;
+  }
 }
+

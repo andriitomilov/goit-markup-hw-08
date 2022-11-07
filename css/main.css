@@ -87,10 +87,16 @@ body {
 }
 
 .title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 33px;
   line-height: 1.17;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .section {
@@ -884,6 +890,12 @@ body {
 
 .checkbox__link {
   color: #2196f3;
+  text-decoration: underline;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__link {
+    text-decoration: none;
+  }
 }
 
 .checkbox__decor {
